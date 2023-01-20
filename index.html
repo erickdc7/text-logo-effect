@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Animated Circle Text Logo Effects</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Animated Circle Text Logo</title>
 </head>
 
 <body>
@@ -19,6 +20,7 @@
 
     <script>
         const text = document.querySelector('.text p');
+
         text.innerHTML = text.innerText
             .split("")
             .map((char, i) => `<span style="transform: rotate(${i * 8}deg)">${char}</span>`)
